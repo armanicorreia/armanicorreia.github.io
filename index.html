@@ -1,18 +1,77 @@
 <!DOCTYPE html>
 <html>
+  <style>
+  body {
+    text-align: center;
+  }
+  ul {
+      list-style: none;
+  }
+  table.center {
+    margin-left:auto;
+    margin-right:auto;
+    width: 20%;
+  }
+  table, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  td, tr{
+    padding: 15px;
+  }
+  .nav {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .nav li {
+    display: inline-block;
+    font-size: 15px;
+    padding: 15px;
+  }
+  /* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+.youtube-responsive-container {
+position:relative;
+padding-bottom:56.25%;
+padding-top:30px;
+height:0;
+overflow:hidden;
+}
+
+.youtube-responsive-container iframe, .youtube-responsive-container object, .youtube-responsive-container embed {
+position:absolute;
+top:0;
+left:0;
+width:70%;
+height:80%;
+}
+
+  </style>
   <body>
     <h1>ARMANI CORREIA</h1>
       <img src='https://lh3.googleusercontent.com/mQ8Cq3ubN0f0BbxsMBrs2OyI0jfSINjIU2TQh7jR2zikDfDo7JmGGidjZWN4fJ3T2CKy4tCWXbdmtufFLOt1YMv1m-nhIU-Dmm8XF26cqGqi8odEmQPSt2ePEgMaEzUiwGmK-l4MmEw=w2400' style="width:15%">
+      <hr>
       <div id=menu>
-        <ul>
-          <li><a href="#aboutme">About Me</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#work">Work Experience</a></li>
-          <li><a href="#programmingskills">Programming Skills</a></li>
-          <li><a href="#interests">General Interests</a></li>
-          <li><a href="#websites">Favorite Websites</a></li>
+        <ul class="nav">
+          <li><a href="#aboutme" style="color: #000000;">About Me</a></li>
+          <li><a href="#education" style="color: #000000;">Education</a></li>
+          <li><a href="#work" style="color: #000000;">Work Experience</a></li>
+          <li><a href="#programmingskills" style="color: #000000;">Programming Skills</a></li>
+          <li><a href="#interests" style="color: #000000;">General Interests</a></li>
+          <li><a href="#websites" style="color: #000000;">Favorite Websites</a></li>
         </ul>
-      </div>
+        </div>
+        <hr>
     <div id=aboutme>
       <h2>About Me</h2>
         <h4>Major:</h4>
@@ -31,7 +90,7 @@
           <p><span style = "color:#ff0000;"> Red</span></p>
       </div>
         <h2 id=education>Education:</h2>
-        <table>
+        <table class="center">
           <tr>
             <th>School</th>
            <th>Years</th>
@@ -72,8 +131,10 @@
           </ul>
         <h2>Favorite Music Video:</h2>
           <a href="https://www.youtube.com/watch?v=1-7ABIM2qjU"><p>You Rock My World - Michael Jackson</p></a>
-        <h2>Funny Rush Hour 3 Bloopers (For Fun)</h2>
-          <iframe width="791" height="445" src="https://www.youtube.com/embed/RiNowsW-2mY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>Funny Rush Hour 3 Bloopers (For Fun)</h2>
+      <div class="youtube-responsive-container" >
+          <iframe src="https://www.youtube.com/embed/RiNowsW-2mY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
         <h2>Say Hello!</h2>
         <form>
             <input type="text">
