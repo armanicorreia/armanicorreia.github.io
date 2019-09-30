@@ -1,0 +1,26 @@
+body {
+  text-align: center;
+}
+table.center {
+  margin-left:auto;
+  margin-right:auto;
+  width: 40%;
+}
+table, td, tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td, tr{
+  padding: 15px;
+}
+.nav {
+  text-align: center;
+  margin: 0;
+  padding-left: 15.17%;
+  padding-right: 15.17%;
+}
+.nav li {
+  display: inline-block;
+  font-size: 15px;
+  padding: 15px;
+}
